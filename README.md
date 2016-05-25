@@ -31,8 +31,9 @@ For example, the figure below depicts the algorithm’s processing of the list [
 
 The first step evaluates the current value.  Next, the algorithm recursively adds the current node’s value to the left (i.e., positive) subset.  When a leaf is reached, it begins recursively adding the current node’s value to the right (i.e., negative) subset.  After both leaves have been evaluated, it backs up one level and continues the recursive process.  
 
-After each leaf evaluation, the list of numbers to be added to a given subset is exhausted.  Consequently, the base case is met wherein the difference of the left subset minus the right subset for each path is compared against each number in the list.  If a match is found, “Yes” is printed to the console and a call to exit is made.  Otherwise, if no match is found, recursion continues to the next leaf.
+After each leaf evaluation, the list of numbers to be added to a given subset is exhausted.  Consequently, the base case is met wherein the difference of the left subset minus the right subset for each path is compared against each number in the list.  If a match is found, “Yes” is printed to the console and a call to exit is made.  Otherwise, if no match is found, recursion continues to the next leaf.  This process results in subset pairs being evaluated in from left to right in the figure below.
 
+![alt tag](/binary_tree.png)
 
 ##Algorithm Complexity Analysis
 
