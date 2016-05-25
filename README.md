@@ -2,6 +2,7 @@
 
 Pseudocode
 
+```java
 private static void recursiveSum(LinkedList list, Node currentNode, int left, int right) {
     IF the current node is null {
         Create an iterator to iterate over the list
@@ -18,7 +19,7 @@ private static void recursiveSum(LinkedList list, Node currentNode, int left, in
         Recursively add each list item to the right subset
     }
 }
-
+```
 
 Explanation
 
