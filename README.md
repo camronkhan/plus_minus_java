@@ -25,7 +25,7 @@ private static void recursiveSum(LinkedList list, Node currentNode, int left, in
 
 This sequence of operations correctly solves the problem because it generates all possible pairs of sums.  The algorithm recursively adds each list item to either a left subset representing positive numbers or a right subset representing negative numbers.  By making two recursive calls the algorithm acts as if it is performing depth-first, pre-order traversal on a binary tree.
 For example, the figure below depicts the algorithm’s processing of the list [27, 6, 12, 11] by recursively performing the following 3 steps:
-1.	Evaluate the current value of the root
+1. Evaluate the current value of the root
 2. “Traverse” the left sub-tree by recursively calling recursiveSum
 3. “Traverse” the right sub-tree by recursively calling recursiveSum
 
