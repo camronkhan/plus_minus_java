@@ -1,6 +1,6 @@
 # plus_minus_java
 
-Pseudocode
+**Pseudocode**
 
 ```java
 private static void recursiveSum(LinkedList list, Node currentNode, int left, int right) {
@@ -21,7 +21,8 @@ private static void recursiveSum(LinkedList list, Node currentNode, int left, in
 }
 ```
 
-Explanation
+
+**Explanation**
 
 This sequence of operations correctly solves the problem because it generates all possible pairs of sums.  The algorithm recursively adds each list item to either a left subset representing positive numbers or a right subset representing negative numbers.  By making two recursive calls the algorithm acts as if it is performing depth-first, pre-order traversal on a binary tree.
 For example, the figure below depicts the algorithm’s processing of the list [27, 6, 12, 11] by recursively performing the following 3 steps:
@@ -34,7 +35,7 @@ The first step evaluates the current value.  Next, the algorithm recursively add
 After each leaf evaluation, the list of numbers to be added to a given subset is exhausted.  Consequently, the base case is met wherein the difference of the left subset minus the right subset for each path is compared against each number in the list.  If a match is found, “Yes” is printed to the console and a call to exit is made.  Otherwise, if no match is found, recursion continues to the next leaf.
 
 
-Algorithm Complexity Analysis
+**Algorithm Complexity Analysis**
 
 The worst case scenario is in which no difference of leaf subsets matches any element in the list.  In such cases, the algorithm performs a brute force traversal in which every possible subset combination (or leaf) is evaluated.  The two recursive calls required to produce all possible subset combinations results in an O(2n) complexity.  However, since the worst case scenario involves comparing each subset difference against each item in the list, a more accurate complexity is O(n*2n).  In either case, this algorithm is extremely inefficient.
 
